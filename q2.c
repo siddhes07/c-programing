@@ -1,13 +1,22 @@
+//read two integers, and perform addition, substraction and division with using a
+//third variable
+
+
 #include<stdio.h>
 int main(){
+    int a,b,c;
 
-    int n;
-    printf("enter a number");
-    scanf("%d"&n);
-    if(n%5==0){
-        printf("divisible by 5");
-    }else{
-        printf("not divisible bye 5");
-    }
-return 0;
+    printf("enter two number : ");
+    scanf("%d %d",&a,&b);
+    
+    c=a+b;
+    printf("addition %d \n",c);
+
+    c=a-b;
+    printf("subraction %d\n",c);
+     
+    c=a/b;
+    printf("divisin%d \n",c);
+
+    return 0;
 }
